@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
     <router-view/>
   </div>
 </template>
 
+<script>
+export default {
+  beforeCreate(){
+		this.$store.commit('initialiseHighScores');
+	}
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root{
+  --background:#151933;
+  --options:#191E38;
+  --option-border:#494E6A;
+  --purple:#7967E9;
+  --score:#0FC69B;
 }
-
-nav {
-  padding: 30px;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+#app{
+  height: 100vh;
+  background-color:var(--background);
+  display: flex;
+  align-items: center;
 }
 </style>
