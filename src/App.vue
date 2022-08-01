@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&display=swap');
 :root{
   --background:#151933;
   --options:#191E38;
@@ -24,6 +25,7 @@ export default {
   padding:0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Saira Condensed', sans-serif;
 }
 #app{
   height: 100vh;
