@@ -49,6 +49,11 @@ export default {
     position:relative;
 }
 
+.option:hover{
+    border-color:var(--purple);
+    color:var(--purple)
+}
+
 input{
     opacity: 0;
 }
