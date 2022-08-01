@@ -65,7 +65,7 @@ export default {
 }
 
 h2{
-  padding:1.5rem;
+  padding:1rem 0;
 }
 
 .score-msg{
@@ -84,7 +84,7 @@ h2{
 }
 
 .highScore{
-  padding:1rem;
+  padding:0.8rem 1rem;
   display: flex;
   background: var(--option);
   border:1px solid var(--option-border);
@@ -99,7 +99,9 @@ h2{
   font-weight: 700;
   font-size:1.2rem;
 }
-
+.score-msg .score{
+  font-size:1.5rem;
+}
 @media (min-width: 1024px){
     .container{
         border:1px solid var(--option-border);

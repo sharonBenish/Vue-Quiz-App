@@ -19,7 +19,6 @@ export default {
   --options:#191E38;
   --option-border:#494E6A;
   --purple:#7967E9;
-  --score:#0FC69B;
 }
 *{
   padding:0;
